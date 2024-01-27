@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root {
+    --primary-color: #1B6DB6;
+    --secondary-color: #DF980C;
+    --accent1-color: #122D64;
+    --accent2-color: #FFFFFF;
+    --text-color: #000000;
+
+    --heading-font: 'Poppins', serif;
+    --paragraph-font: 'Poppins', serif;
+
+    --nav-background-color: #1B6DB6;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #DF980C;
+    --nav-hover-background-color: #122D64;
+
+}
+body {
+    font-family: var(--heading-font), sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+  
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+  
+header img {
+    max-width: 100%;
+    height: auto;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+  
+nav a.active {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+  
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+  
+.hero {
+    position: relative;
+}
+  
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.hero article {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(4, 38, 78, 0.7);
+    padding: 20px;
+    width: 80%;
+}
+  
+.hero article img {
+    float: right;
+    max-width: 150px;
+    margin-left: 20px;
+    height: auto;
+}
+  
+section {
+    margin-top: 20px;
+}
+
+section h2 {
+    color: var(--accent1-color);
+}
+  
+footer {
+    background-color: var(--accent1-color);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+  
+footer img {
+    max-width: 30px;
+    height: auto;
+}

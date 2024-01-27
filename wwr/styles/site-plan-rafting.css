@@ -20,13 +20,21 @@ body {
     max-width: 960px;
     padding: 20px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--text-color);
 }
 header {
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+header p {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
 }
 p {
     padding: 25px;
