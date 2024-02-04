@@ -23,16 +23,26 @@ body {
 }
   
 header {
-    background-color: var(--primary-color);
-    padding: 10px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+	align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
+    background-color: var(--nav-background-color);
 }
   
-header img {
-    max-width: 100%;
-    height: auto;
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
 }
-  
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 nav a {
     color: #fff;
     text-decoration: none;
@@ -51,7 +61,7 @@ nav a:hover {
 main {
     max-width: 1000px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 1rem;
     background-color: #fff;
 }
   
@@ -93,23 +103,82 @@ main {
     margin-left: 20px;
     height: auto;
 }
-  
-section {
-    margin-top: 20px;
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px auto;
+    padding: 1rem;
+}
+
+.history section {
+    grid-column: 1/4;
+}
+
+section p {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
 }
 
 section h2 {
-    color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    color: var(--nav-hover-background-color);
 }
-  
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px auto;
+    padding: 1rem;
+}
+
+.adventures section {
+    grid-column: 1/6;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.adventures figure {
+    grid-column: 1/6;
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: auto;
+}
+
+figure img {
+    border: thin #6b6868 solid;
+    width: 15%;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    width: 15%;
+}
+
 footer {
-    background-color: var(--accent1-color);
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+	align-items: center;
+    margin: 20px auto;
+    background-color: var(--nav-background-color);
+    padding: 1rem;
     text-align: center;
     color: #fff;
+    max-width: 1000px;
 }
   
 footer p {
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
   
