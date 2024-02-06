@@ -141,7 +141,6 @@ section h2 {
 }
 
 .adventures figure {
-    grid-column: 1/6;
     display: flex;
     flex-flow: column;
     flex-direction: row;
