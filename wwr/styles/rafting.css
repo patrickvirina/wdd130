@@ -129,43 +129,49 @@ section h2 {
 }
 .adventures {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 20px auto;
+    grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
 }
 
 .adventures section {
+    grid-column: 2/3;
+
+}
+
+.figure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1rem;
+}
+
+.figure figure{
     grid-column: 1/6;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.adventures figure {
     display: flex;
-    flex-flow: column;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: space-evenly;
-    padding: 1rem;
-    margin: auto;
 }
 
-figure img {
-    border: thin #6b6868 solid;
-    width: 15%;
+.figure img {
+    width: 21%;
+    border: thin #ffffff solid;
+    padding: 5px;
 }
 
-figcaption {
-    background-color: #222;
-    color: #fff;
+.figcaption {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    background: #9ccefa;
+    color: #000000;
     font: italic smaller sans-serif;
-    padding: 3px;
+    padding: 5px;
     text-align: center;
-    width: 15%;
+    margin: 0;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 25% 50% 25%;
 	align-items: center;
     margin: 20px auto;
     background-color: var(--nav-background-color);
@@ -176,6 +182,7 @@ footer {
 }
   
 footer p {
+    grid-column: 2/3;
     display: flex;
     justify-content: center;
     margin: 0;
