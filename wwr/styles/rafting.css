@@ -241,7 +241,6 @@ textarea {
 .subscription {
     grid-column: 1/3;
     display: grid;
-    justify-content: baseline;
 }
 
 input [type="checkbox"] {
@@ -307,9 +306,10 @@ h3 {
     margin-top: 10px;
     background-color: #222;
     color: #fff;
-    font: italic bigger sans-serif;
-    padding: 3px;
+    font: italic large sans-serif;
     text-align: center;
+    width: 100%;
+    padding: 5px;
 }
 
 footer {
