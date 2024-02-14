@@ -90,13 +90,24 @@ main {
 
 .hero article {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     background-color: rgba(4, 38, 78, 0.7);
     padding: 20px;
     width: 80%;
+    text-align: center;
+}
+
+.hero button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
 }
   
 .hero article img {
@@ -311,6 +322,86 @@ h3 {
     width: 100%;
     padding: 5px;
 }
+
+.tripsdesc {
+    display: flex;
+    background: var(--nav-hover-link-color);
+}
+
+.tripsdesc figure {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tripsdesc img {
+    width: 245px;
+    border: thin #fff8f8 solid;
+    padding: 10px;
+}
+
+.tripsdesc figcaption {
+    margin-top: 10px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font: large sans-serif;
+    text-align: center;
+    width: 255px;
+    padding: 5px;
+}
+
+.tripstable {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    margin: 2rem;
+}
+
+.tripstable table {
+    grid-column: 2/3;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: var(--paragraph-font) ,sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+  
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    font-size: small;
+}
+  
+thead,
+tfoot {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+}
+  
+th,
+td {
+    border: 1px solid rgb(160, 160, 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+  
+td:last-of-type {
+    text-align: center;
+}
+  
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(227, 238, 247);
+}
+  
+tfoot th {
+    text-align: right;
+}
+  
+tfoot td {
+    font-weight: bold;
+}  
 
 footer {
     display: grid;
