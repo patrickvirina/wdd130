@@ -214,6 +214,9 @@ section p {
     grid-row: 3/4;
     display: flex;
     flex-direction: row;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 section h2 {
